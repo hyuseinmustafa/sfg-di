@@ -1,6 +1,6 @@
 package com.hyuseinmustafa.sfgdi.controllers;
 
-import com.hyuseinmustafa.sfgdi.services.GreetingServiceImpl;
+import com.hyuseinmustafa.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ class PropertyInjectionControllerTest {
     void setUp() {
         controller = new PropertyInjectionController();
 
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingService();
     }
     @Test
     void getGreeting() {
